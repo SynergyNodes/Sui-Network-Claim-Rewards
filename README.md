@@ -6,8 +6,13 @@
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 apt-get install -y nodejs
 nodejs -v
+mkdir script
+cd script
+npm install shell_exec@1.0.3
+nano withdraw.js
 ```
 
+2. Copy the folowing code, make changes to the code and save the file.
 ```
 import shell_exec from 'shell_exec';
 var exec = shell_exec.shell_exec;
@@ -96,4 +101,9 @@ function mergeObjectById(objectId) {
   exec(sui_binary_path + ' client merge-coin --primary-coin ' + primary_coin + ' --coin-to-merge ' + objectId + ' --gas-budget ' + gas_budget);
   console.log(objectId, " - Merge Successful");
 }
+```
+
+3. To run the script:
+```
+node withdraw.js
 ```
