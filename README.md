@@ -1,6 +1,13 @@
 # Sui Network - Claim Rewards
 ## JS script to claim Validator Rewards
 
+1. Install NodeJs
+```
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+nodejs -v
+```
+
 ```
 import shell_exec from 'shell_exec';
 var exec = shell_exec.shell_exec;
