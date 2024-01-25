@@ -1,5 +1,5 @@
 # Sui Network - Claim Rewards
-JS script to claim Validator Rewards
+## JS script to claim Validator Rewards
 
 ```
 import shell_exec from 'shell_exec';
